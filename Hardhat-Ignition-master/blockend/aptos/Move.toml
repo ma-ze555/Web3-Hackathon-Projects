@@ -1,0 +1,13 @@
+[package]
+name = "squid_chain_starter"
+version = "0.1.0"
+authors = ["Aptos Starter Kit"]
+upgrade_policy = "compatible"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[addresses]
+squid_chain_starter = "_"
