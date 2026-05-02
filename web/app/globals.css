@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(45, 212, 191, 0.14), transparent 32%),
+    radial-gradient(circle at top right, rgba(251, 191, 36, 0.12), transparent 28%),
+    linear-gradient(180deg, #041019 0%, #06131e 55%, #08131d 100%);
+  color: #e2e8f0;
+  overflow-x: hidden;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(45, 212, 191, 0.55) rgba(6, 18, 28, 0.9);
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(45, 212, 191, 0.45);
+  border-radius: 9999px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(6, 18, 28, 0.9);
+}
+
+@layer base {
+  :root {
+    --background: 214 44% 7%;
+    --foreground: 210 40% 98%;
+    --card: 215 32% 10%;
+    --card-foreground: 210 40% 98%;
+    --popover: 215 32% 10%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 172 66% 44%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 215 25% 18%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 215 25% 18%;
+    --muted-foreground: 215 20% 68%;
+    --accent: 43 96% 56%;
+    --accent-foreground: 214 44% 7%;
+    --destructive: 0 70% 48%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 215 25% 18%;
+    --input: 215 25% 18%;
+    --ring: 172 66% 44%;
+    --chart-1: 172 66% 44%;
+    --chart-2: 43 96% 56%;
+    --chart-3: 199 89% 48%;
+    --chart-4: 16 85% 58%;
+    --chart-5: 262 83% 63%;
+    --radius: 0.5rem;
+  }
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    font-family: var(--font-space-grotesk), sans-serif;
+    @apply bg-background text-foreground;
+  }
+}
